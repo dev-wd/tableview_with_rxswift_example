@@ -7,9 +7,11 @@ This one is one of the way, not the answer you must follow.
 
 
 ## Example 1. Showing data on tableview cell
-![example1](./images/example1.png)
+![example1](./images/example1.png = 250x500)
 
 - Showing fruit name and image on tableview.
+- Data: BehaviorRelay
+- Binding data on tableview with Rxswift
 
 ## Example 2. Get data from cell textfield
 
