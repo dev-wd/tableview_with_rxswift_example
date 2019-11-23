@@ -7,7 +7,7 @@ This one is one of the way, not the answer you must follow.
 
 
 ## Example 1. Showing data on tableview cell
-![example1](./images/example1.png = 250x500)
+![example1](./images/example1.png width="100")
 
 - Showing fruit name and image on tableview.
 - Data: BehaviorRelay
