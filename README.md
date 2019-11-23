@@ -7,8 +7,10 @@ This one is one of the way, not the answer you must follow.
 
 
 ## Example 1. Showing data on tableview cell
+![example1](./images/example1.png)
 
- 이미지랑 같이 과일 보여주기 
+- Showing fruit name and image on tableview.
+
 ## Example 2. Get data from cell textfield
 
 과일 치면(textfield) 이미지 보여주기
