@@ -1,4 +1,3 @@
-
 import UIKit
 import RxSwift
 import RxCocoa
@@ -35,6 +34,7 @@ class FruitEX2ViewController: UIViewController , UITableViewDelegate{
     
     func InputTableView() {
         
+        temDic = self.firstFruitDic.value
         // Set tableview delegate. (for setting table view cell height)
         tableRef.rx.setDelegate(self).disposed(by: disposeBag)
         
@@ -47,7 +47,6 @@ class FruitEX2ViewController: UIViewController , UITableViewDelegate{
             
         // Update Dictionary from cell textfield.
         cell.fruitTextField.rx.text.orEmpty.asDriver().drive(onNext: { cellvalue in
-            self.temDic = self.firstFruitDic.value
             self.temDic[index]["name"] = cellvalue
             self.updatedFruitDic.accept(self.temDic)
 
