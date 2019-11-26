@@ -7,7 +7,7 @@ This one is one of the way, not the answer you must follow.
 
 
 ## Example 1. Showing data on tableview cell
-<center><img src="./images/example1.png" width="100" height="100"></center>
+<center><img src="./images/example1.png" width="300" height="600"></center>
 
 - Showing fruit name and image on tableview.
 - Data: BehaviorRelay
