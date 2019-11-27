@@ -6,7 +6,7 @@ There are several ways to develope tableview with rxSwfit.
 
 This one is one of the way, not the answer you must follow.
 
-- Code explaination : 
+- Code explaination : https://dev-wd.github.io/swift/2019-11-24-tableview-rxswift-example/
 
 
 ## Example 1. Showing data on tableview cell
