@@ -20,14 +20,14 @@ class FruitEX2ViewController: UIViewController , UITableViewDelegate{
     
     var updatedFruitDic: BehaviorRelay<[[String : String]]> =
         BehaviorRelay(value:
-        [["number":"1.","name":""],
-         ["number":"2.","name":""],
-         ["number":"3.","name":""],
-         ["number":"4.","name":""],
-         ["number":"5.","name":""],
-         ["number":"6.","name":""],
-         ["number":"7.","name":""],
-         ["number":"8.","name":""]])
+            [["number":"1.","name":""],
+             ["number":"2.","name":""],
+             ["number":"3.","name":""],
+             ["number":"4.","name":""],
+             ["number":"5.","name":""],
+             ["number":"6.","name":""],
+             ["number":"7.","name":""],
+             ["number":"8.","name":""]])
     
     var disposeBag = DisposeBag()
     var temDic : [[String: String]] = []
@@ -65,12 +65,11 @@ class FruitEX2ViewController: UIViewController , UITableViewDelegate{
             .bind(to: tableRef.rx
                 .items(cellIdentifier: "Cell", cellType: FruitEX2Cell.self))
             {index, element, cell in
-                
                 // Write number for cell textfield.
                 cell.fruitNumber.text = element["number"]
-                
+                // Write textfield text which erased from each cell.
+                cell.fruitTextField.text = self.updatedFruitDic.value[index]["name"]
                 // Update Dictionary from cell textfield.
-                
                 cell.fruitTextField.rx
                     .text
                     .orEmpty
@@ -94,4 +93,3 @@ class FruitEX2ViewController: UIViewController , UITableViewDelegate{
         param.showDic = updatedFruitDic
     }
 }
-
